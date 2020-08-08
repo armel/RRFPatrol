@@ -23,7 +23,7 @@ def read_log():
         log = ''
         # Requete HTTP vers le flux json de l'API fournie par F1EVM
         try:
-            r = requests.get(s.rrf_serveur[serveur], verify=False, timeout=2)
+            r = requests.get(s.rrf_serveur[serveur], verify=False, timeout=0.5)
             new_json[serveur] = r.json()
             check += 1
         except:
