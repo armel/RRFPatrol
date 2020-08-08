@@ -25,4 +25,4 @@ rrf_json = []
 
 path_json = '/var/www/RRFTracker/rrf_patrol.json'
 
-main_loop = 2.5		# Main loop tempo
+main_loop = 2		# Main loop tempo

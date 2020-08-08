@@ -17,8 +17,6 @@ def read_log():
     new_json = {}
     check = 0
 
-    print('.')
-
     for serveur in s.rrf_serveur:
         log = ''
         # Requete HTTP vers le flux json de l'API fournie par F1EVM
@@ -27,11 +25,10 @@ def read_log():
             new_json[serveur] = r.json()
             check += 1
         except:
-            pass
+            return
 
     if(check == 4):
         if (new_json != s.rrf_json):
             s.rrf_json = new_json.copy()
             with open(s.path_json, 'w') as f:
                 json.dump(s.rrf_json, f)
-                print(s.rrf_json)
