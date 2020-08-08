@@ -12,4 +12,4 @@ case "$1" in
         echo "Stopping RRFPatrol"
         kill `cat $PATH_PID/RRFPatrol.pid`
         ;;
-    esac%
+	esac
