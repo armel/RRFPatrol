@@ -10,7 +10,7 @@ Check video about RRFTracker on https://www.youtube.com/watch?v=rVW8xczVpEo
 
 # Version
 
-version = '0.0.1'
+version = '0.0.2'
 
 # Settings
 
@@ -23,6 +23,6 @@ rrf_serveur = {
 
 rrf_json = []
 
-path_json = '/var/www/RRFTracker/rrf_patrol.json'
+path_json = '/var/www/RRFPatrol/rrf_patrol.json'
 
 main_loop = 2		# Main loop tempo
