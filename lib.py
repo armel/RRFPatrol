@@ -18,7 +18,6 @@ def read_log():
     check = 0
 
     for serveur in s.rrf_serveur:
-        log = ''
         # Requete HTTP vers le flux json de l'API fournie par F1EVM
         try:
             r = requests.get(s.rrf_serveur[serveur], verify=False, timeout=0.5)
