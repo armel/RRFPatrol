@@ -15,19 +15,18 @@ import json
 
 def read_log():
     new_json = {}
-    check = 0
 
     for serveur in s.rrf_serveur:
-        # Requete HTTP vers le flux json de l'API fournie par F1EVM
+        # Requete HTTP vers le flux json RRFBlockIP
         try:
-            r = requests.get(s.rrf_serveur[serveur], verify=False, timeout=0.5)
+            r = requests.get(s.rrf_serveur[serveur], verify=False, timeout=1)
             new_json[serveur] = r.json()
-            check += 1
         except:
-            return
+            return False
 
-    if(check == 4):
-        if (new_json != s.rrf_json):
-            s.rrf_json = new_json.copy()
-            with open(s.path_json, 'w') as f:
-                json.dump(s.rrf_json, f)
+    if (new_json != s.rrf_json):
+        s.rrf_json = new_json.copy()
+        with open(s.path_json, 'w') as f:
+            json.dump(s.rrf_json, f)
+
+    return True
