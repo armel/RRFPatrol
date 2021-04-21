@@ -21,6 +21,7 @@ if env == 'dev':
         'RRF2': 'http://localhost/~armel/RRFBlockIP_2/back/RRFBlockIP.py',
         'RRF3': 'http://localhost/~armel/RRFBlockIP_3/back/RRFBlockIP.py',
         'RRF4': 'http://localhost/~armel/RRFBlockIP_4/back/RRFBlockIP.py'
+        'RRF5': 'http://localhost/~armel/RRFBlockIP_5/back/RRFBlockIP.py'
     }
     path_json = '/Users/armel/Sites/RRFTracker/rrf_patrol.json'
 
@@ -29,7 +30,8 @@ else:
         'RRF1': 'http://rrf.f5nlg.ovh:8080/cgi-bin/RRFBlockIP.py',
         'RRF2': 'http://rrf2.f5nlg.ovh:8080/cgi-bin/RRFBlockIP.py',
         'RRF3': 'http://rrf3.f5nlg.ovh:8080/cgi-bin/RRFBlockIP.py',
-        'RRF4': 'http://serveur.f1tzo.com:8081/cgi-bin/RRFBlockIP.py'
+        'RRF4': 'http://rrf4.f5nlg.ovh:8080/cgi-bin/RRFBlockIP.py',
+        'RRF5': 'http://serveur.f1tzo.com:8081/cgi-bin/RRFBlockIP.py'
     }
     path_json = '/var/www/RRFTracker/rrf_patrol.json'
 
